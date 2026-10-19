@@ -4,6 +4,39 @@
 import type { WireSchema } from "./client";
 
 export const wireSchemasPart20: Record<string, WireSchema> = {
+  "dependencyGraphDiffRange response": {
+    changeType: { wire: "change_type" },
+    manifest: { wire: "manifest" },
+    ecosystem: { wire: "ecosystem" },
+    name: { wire: "name" },
+    version: { wire: "version" },
+    packageUrl: { wire: "package_url" },
+    license: { wire: "license" },
+    sourceRepositoryUrl: { wire: "source_repository_url" },
+    vulnerabilities: {
+      wire: "vulnerabilities",
+      fields: {
+        severity: { wire: "severity" },
+        advisoryGhsaId: { wire: "advisory_ghsa_id" },
+        advisorySummary: { wire: "advisory_summary" },
+        advisoryUrl: { wire: "advisory_url" },
+      },
+    },
+    scope: { wire: "scope" },
+  },
+  "dependencyGraphGenerateSbomReport response": {
+    sbomUrl: { wire: "sbom_url" },
+  },
+  "dependencyGraphCreateRepositorySnapshot response": {
+    id: { wire: "id" },
+    createdAt: { wire: "created_at" },
+    result: { wire: "result" },
+    message: { wire: "message" },
+  },
+  "hostedComputeListNetworkConfigurationsForOrg response": {
+    totalCount: { wire: "total_count" },
+    networkConfigurations: { wire: "network_configurations", type: "NetworkConfiguration" },
+  },
   "searchCode response": {
     totalCount: { wire: "total_count" },
     incompleteResults: { wire: "incomplete_results" },
@@ -40,46 +73,6 @@ export const wireSchemasPart20: Record<string, WireSchema> = {
     totalCount: { wire: "total_count" },
     incompleteResults: { wire: "incomplete_results" },
     items: { wire: "items", type: "UserSearchResultItem" },
-  },
-  "pullRequestStacksCreate response": {
-    id: { wire: "id" },
-    number: { wire: "number" },
-    nodeId: { wire: "node_id" },
-    url: { wire: "url" },
-    base: { wire: "base" },
-    open: { wire: "open" },
-    createdAt: { wire: "created_at" },
-    pullRequests: { wire: "pull_requests", type: "PullRequestStackPullRequest" },
-  },
-  "pullRequestStacksGet response": {
-    id: { wire: "id" },
-    number: { wire: "number" },
-    nodeId: { wire: "node_id" },
-    url: { wire: "url" },
-    base: { wire: "base" },
-    open: { wire: "open" },
-    createdAt: { wire: "created_at" },
-    pullRequests: { wire: "pull_requests", type: "PullRequestStackPullRequest" },
-  },
-  "pullRequestStacksAdd response": {
-    id: { wire: "id" },
-    number: { wire: "number" },
-    nodeId: { wire: "node_id" },
-    url: { wire: "url" },
-    base: { wire: "base" },
-    open: { wire: "open" },
-    createdAt: { wire: "created_at" },
-    pullRequests: { wire: "pull_requests", type: "PullRequestStackPullRequest" },
-  },
-  "pullRequestStacksUnstack response": {
-    id: { wire: "id" },
-    number: { wire: "number" },
-    nodeId: { wire: "node_id" },
-    url: { wire: "url" },
-    base: { wire: "base" },
-    open: { wire: "open" },
-    createdAt: { wire: "created_at" },
-    pullRequests: { wire: "pull_requests", type: "PullRequestStackPullRequest" },
   },
   "usersListAttestationsBulk response": {
     attestationsSubjectDigests: { wire: "attestations_subject_digests" },

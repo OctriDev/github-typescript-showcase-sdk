@@ -4,30 +4,6 @@
 import type { WireSchema } from "./client";
 
 export const wireSchemasPart19: Record<string, WireSchema> = {
-  "apiInsightsGetTimeStatsByActor response": {
-    timestamp: { wire: "timestamp" },
-    totalRequestCount: { wire: "total_request_count" },
-    rateLimitedRequestCount: { wire: "rate_limited_request_count" },
-  },
-  "apiInsightsGetUserStats response": {
-    actorType: { wire: "actor_type" },
-    actorName: { wire: "actor_name" },
-    actorId: { wire: "actor_id" },
-    integrationId: { wire: "integration_id" },
-    oauthApplicationId: { wire: "oauth_application_id" },
-    totalRequestCount: { wire: "total_request_count" },
-    rateLimitedRequestCount: { wire: "rate_limited_request_count" },
-    lastRateLimitedTimestamp: { wire: "last_rate_limited_timestamp" },
-    lastRequestTimestamp: { wire: "last_request_timestamp" },
-  },
-  "orgsListAppInstallations response": {
-    totalCount: { wire: "total_count" },
-    installations: { wire: "installations", type: "Installation" },
-  },
-  "orgsListOrgRoles response": {
-    totalCount: { wire: "total_count" },
-    roles: { wire: "roles", type: "OrganizationRole" },
-  },
   "orgsGetImmutableReleasesSettingsRepositories response": {
     totalCount: { wire: "total_count" },
     repositories: { wire: "repositories", type: "MinimalRepository" },
@@ -181,29 +157,21 @@ export const wireSchemasPart19: Record<string, WireSchema> = {
     totalCount: { wire: "total_count" },
     variables: { wire: "variables", type: "ActionsVariable" },
   },
-  "interactionsGetPullRequestCreationCapForOrg response": {
-    enabled: { wire: "enabled" },
-    maxOpenPullRequests: { wire: "max_open_pull_requests" },
-    includeDrafts: { wire: "include_drafts" },
+  "codeSecurityGetDefaultConfigurationsForEnterprise response": {
+    defaultForNewRepos: { wire: "default_for_new_repos" },
+    configuration: { wire: "configuration", type: "CodeSecurityConfiguration" },
   },
-  "interactionsUpdatePullRequestCreationCapForOrg response": {
-    enabled: { wire: "enabled" },
-    maxOpenPullRequests: { wire: "max_open_pull_requests" },
-    includeDrafts: { wire: "include_drafts" },
+  "codeSecuritySetConfigurationAsDefaultForEnterprise response": {
+    defaultForNewRepos: { wire: "default_for_new_repos" },
+    configuration: { wire: "configuration", type: "CodeSecurityConfiguration" },
   },
-  "interactionsGetPullRequestCreationCapForRepo response": {
-    enabled: { wire: "enabled" },
-    maxOpenPullRequests: { wire: "max_open_pull_requests" },
-    includeDrafts: { wire: "include_drafts" },
+  "codeSecurityGetDefaultConfigurations response": {
+    defaultForNewRepos: { wire: "default_for_new_repos" },
+    configuration: { wire: "configuration", type: "CodeSecurityConfiguration" },
   },
-  "interactionsUpdatePullRequestCreationCapForRepo response": {
-    enabled: { wire: "enabled" },
-    maxOpenPullRequests: { wire: "max_open_pull_requests" },
-    includeDrafts: { wire: "include_drafts" },
-  },
-  "hostedComputeListNetworkConfigurationsForOrg response": {
-    totalCount: { wire: "total_count" },
-    networkConfigurations: { wire: "network_configurations", type: "NetworkConfiguration" },
+  "codeSecuritySetConfigurationAsDefault response": {
+    defaultForNewRepos: { wire: "default_for_new_repos" },
+    configuration: { wire: "configuration", type: "CodeSecurityConfiguration" },
   },
   "codespacesListInOrganization response": {
     totalCount: { wire: "total_count" },
@@ -267,6 +235,43 @@ export const wireSchemasPart19: Record<string, WireSchema> = {
     totalCount: { wire: "total_count" },
     machines: { wire: "machines", type: "CodespaceMachine" },
   },
+  "interactionsGetPullRequestCreationCapForOrg response": {
+    enabled: { wire: "enabled" },
+    maxOpenPullRequests: { wire: "max_open_pull_requests" },
+    includeDrafts: { wire: "include_drafts" },
+  },
+  "interactionsUpdatePullRequestCreationCapForOrg response": {
+    enabled: { wire: "enabled" },
+    maxOpenPullRequests: { wire: "max_open_pull_requests" },
+    includeDrafts: { wire: "include_drafts" },
+  },
+  "interactionsGetPullRequestCreationCapForRepo response": {
+    enabled: { wire: "enabled" },
+    maxOpenPullRequests: { wire: "max_open_pull_requests" },
+    includeDrafts: { wire: "include_drafts" },
+  },
+  "interactionsUpdatePullRequestCreationCapForRepo response": {
+    enabled: { wire: "enabled" },
+    maxOpenPullRequests: { wire: "max_open_pull_requests" },
+    includeDrafts: { wire: "include_drafts" },
+  },
+  "privateRegistriesListOrgPrivateRegistries response": {
+    totalCount: { wire: "total_count" },
+    configurations: { wire: "configurations", type: "OrgPrivateRegistryConfiguration" },
+  },
+  "privateRegistriesGetOrgPublicKey response": {
+    keyId: { wire: "key_id" },
+    key: { wire: "key" },
+  },
+  "secretScanningBulkCreateOrgCustomPatterns response": {
+    createdPatterns: { wire: "created_patterns", type: "SecretScanningCustomPattern" },
+  },
+  "secretScanningUpdateOrgPatternConfigs response": {
+    patternConfigVersion: { wire: "pattern_config_version" },
+  },
+  "secretScanningBulkCreateRepoCustomPatterns response": {
+    createdPatterns: { wire: "created_patterns", type: "SecretScanningCustomPattern" },
+  },
   "reposGetOrgRuleSuites response": {
     id: { wire: "id" },
     actorId: { wire: "actor_id" },
@@ -326,15 +331,6 @@ export const wireSchemasPart19: Record<string, WireSchema> = {
     result: { wire: "result" },
     evaluationResult: { wire: "evaluation_result" },
   },
-  "secretScanningBulkCreateOrgCustomPatterns response": {
-    createdPatterns: { wire: "created_patterns", type: "SecretScanningCustomPattern" },
-  },
-  "secretScanningUpdateOrgPatternConfigs response": {
-    patternConfigVersion: { wire: "pattern_config_version" },
-  },
-  "secretScanningBulkCreateRepoCustomPatterns response": {
-    createdPatterns: { wire: "created_patterns", type: "SecretScanningCustomPattern" },
-  },
   "checksListForSuite response": {
     totalCount: { wire: "total_count" },
     checkRuns: { wire: "check_runs", type: "CheckRun" },
@@ -347,41 +343,44 @@ export const wireSchemasPart19: Record<string, WireSchema> = {
     totalCount: { wire: "total_count" },
     checkSuites: { wire: "check_suites", type: "CheckSuite" },
   },
-  "privateRegistriesListOrgPrivateRegistries response": {
-    totalCount: { wire: "total_count" },
-    configurations: { wire: "configurations", type: "OrgPrivateRegistryConfiguration" },
-  },
-  "privateRegistriesGetOrgPublicKey response": {
-    keyId: { wire: "key_id" },
-    key: { wire: "key" },
-  },
-  "dependencyGraphDiffRange response": {
-    changeType: { wire: "change_type" },
-    manifest: { wire: "manifest" },
-    ecosystem: { wire: "ecosystem" },
-    name: { wire: "name" },
-    version: { wire: "version" },
-    packageUrl: { wire: "package_url" },
-    license: { wire: "license" },
-    sourceRepositoryUrl: { wire: "source_repository_url" },
-    vulnerabilities: {
-      wire: "vulnerabilities",
-      fields: {
-        severity: { wire: "severity" },
-        advisoryGhsaId: { wire: "advisory_ghsa_id" },
-        advisorySummary: { wire: "advisory_summary" },
-        advisoryUrl: { wire: "advisory_url" },
-      },
-    },
-    scope: { wire: "scope" },
-  },
-  "dependencyGraphGenerateSbomReport response": {
-    sbomUrl: { wire: "sbom_url" },
-  },
-  "dependencyGraphCreateRepositorySnapshot response": {
+  "pullRequestStacksCreate response": {
     id: { wire: "id" },
+    number: { wire: "number" },
+    nodeId: { wire: "node_id" },
+    url: { wire: "url" },
+    base: { wire: "base" },
+    open: { wire: "open" },
     createdAt: { wire: "created_at" },
-    result: { wire: "result" },
-    message: { wire: "message" },
+    pullRequests: { wire: "pull_requests", type: "PullRequestStackPullRequest" },
+  },
+  "pullRequestStacksGet response": {
+    id: { wire: "id" },
+    number: { wire: "number" },
+    nodeId: { wire: "node_id" },
+    url: { wire: "url" },
+    base: { wire: "base" },
+    open: { wire: "open" },
+    createdAt: { wire: "created_at" },
+    pullRequests: { wire: "pull_requests", type: "PullRequestStackPullRequest" },
+  },
+  "pullRequestStacksAdd response": {
+    id: { wire: "id" },
+    number: { wire: "number" },
+    nodeId: { wire: "node_id" },
+    url: { wire: "url" },
+    base: { wire: "base" },
+    open: { wire: "open" },
+    createdAt: { wire: "created_at" },
+    pullRequests: { wire: "pull_requests", type: "PullRequestStackPullRequest" },
+  },
+  "pullRequestStacksUnstack response": {
+    id: { wire: "id" },
+    number: { wire: "number" },
+    nodeId: { wire: "node_id" },
+    url: { wire: "url" },
+    base: { wire: "base" },
+    open: { wire: "open" },
+    createdAt: { wire: "created_at" },
+    pullRequests: { wire: "pull_requests", type: "PullRequestStackPullRequest" },
   },
 };

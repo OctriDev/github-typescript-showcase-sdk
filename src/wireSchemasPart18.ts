@@ -138,22 +138,6 @@ export const wireSchemasPart18: Record<string, WireSchema> = {
       wire: "require_write_access_for_automation_triggers",
     },
   },
-  "codeSecurityGetDefaultConfigurationsForEnterprise response": {
-    defaultForNewRepos: { wire: "default_for_new_repos" },
-    configuration: { wire: "configuration", type: "CodeSecurityConfiguration" },
-  },
-  "codeSecuritySetConfigurationAsDefaultForEnterprise response": {
-    defaultForNewRepos: { wire: "default_for_new_repos" },
-    configuration: { wire: "configuration", type: "CodeSecurityConfiguration" },
-  },
-  "codeSecurityGetDefaultConfigurations response": {
-    defaultForNewRepos: { wire: "default_for_new_repos" },
-    configuration: { wire: "configuration", type: "CodeSecurityConfiguration" },
-  },
-  "codeSecuritySetConfigurationAsDefault response": {
-    defaultForNewRepos: { wire: "default_for_new_repos" },
-    configuration: { wire: "configuration", type: "CodeSecurityConfiguration" },
-  },
   "dependabotListOrgSecrets response": {
     totalCount: { wire: "total_count" },
     secrets: { wire: "secrets", type: "OrganizationDependabotSecret" },
@@ -272,5 +256,29 @@ export const wireSchemasPart18: Record<string, WireSchema> = {
     timestamp: { wire: "timestamp" },
     totalRequestCount: { wire: "total_request_count" },
     rateLimitedRequestCount: { wire: "rate_limited_request_count" },
+  },
+  "apiInsightsGetTimeStatsByActor response": {
+    timestamp: { wire: "timestamp" },
+    totalRequestCount: { wire: "total_request_count" },
+    rateLimitedRequestCount: { wire: "rate_limited_request_count" },
+  },
+  "apiInsightsGetUserStats response": {
+    actorType: { wire: "actor_type" },
+    actorName: { wire: "actor_name" },
+    actorId: { wire: "actor_id" },
+    integrationId: { wire: "integration_id" },
+    oauthApplicationId: { wire: "oauth_application_id" },
+    totalRequestCount: { wire: "total_request_count" },
+    rateLimitedRequestCount: { wire: "rate_limited_request_count" },
+    lastRateLimitedTimestamp: { wire: "last_rate_limited_timestamp" },
+    lastRequestTimestamp: { wire: "last_request_timestamp" },
+  },
+  "orgsListAppInstallations response": {
+    totalCount: { wire: "total_count" },
+    installations: { wire: "installations", type: "Installation" },
+  },
+  "orgsListOrgRoles response": {
+    totalCount: { wire: "total_count" },
+    roles: { wire: "roles", type: "OrganizationRole" },
   },
 };
