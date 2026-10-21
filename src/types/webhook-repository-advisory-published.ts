@@ -5,7 +5,7 @@ import type { EnterpriseWebhooks, OrganizationSimpleWebhooks } from "./misc";
 
 import type { RepositoryWebhooks } from "./repository";
 
-import type { RepositoryAdvisory } from "./security-advisories.part001";
+import type { RepositoryAdvisory } from "./security-advisories-shared";
 
 import type { SimpleUser } from "./shared-simple";
 

@@ -2,6 +2,14 @@
 // This file is machine-generated from your OpenAPI spec.
 
 import type {
+  RepositoryRuleRequiredSignatures,
+  RepositoryRuleRequiredStatusChecks,
+  RepositoryRuleTagNamePattern,
+  RepositoryRuleUpdate,
+  RepositoryRuleWorkflows,
+} from "./repos-repository-rule-required-signatures";
+
+import type {
   RepositoryRuleBranchNamePattern,
   RepositoryRuleCodeScanning,
   RepositoryRuleCommitAuthorEmailPattern,
@@ -18,24 +26,16 @@ import type {
   RepositoryRulePullRequest,
   RepositoryRuleRequiredDeployments,
   RepositoryRuleRequiredLinearHistory,
-} from "./repos-repository-rule.part001";
-
-import type {
-  RepositoryRuleRequiredSignatures,
-  RepositoryRuleRequiredStatusChecks,
-  RepositoryRuleTagNamePattern,
-  RepositoryRuleUpdate,
-  RepositoryRuleWorkflows,
-} from "./repos-repository-rule.part002";
+} from "./repos-repository-rule-shared";
 
 import type { RepositoryRulesetConditions } from "./repos-repository-ruleset";
-
-import type { RepositoryRulesetConditionsRepositoryIdTarget } from "./shared-repository.part001";
 
 import type {
   RepositoryRulesetConditionsRepositoryNameTarget,
   RepositoryRulesetConditionsRepositoryPropertyTarget,
-} from "./shared-repository.part002";
+} from "./shared-repository-ruleset-conditions-repository-name-target";
+
+import type { RepositoryRulesetConditionsRepositoryIdTarget } from "./shared-repository-shared";
 
 /**
  * A `OrgRules` whose `type` names no branch this SDK knows, kept as received.

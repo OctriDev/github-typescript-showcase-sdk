@@ -4,6 +4,33 @@
 import type { WireSchema } from "./client";
 
 export const wireSchemasPart20: Record<string, WireSchema> = {
+  "searchIssuesAndPullRequests response": {
+    totalCount: { wire: "total_count" },
+    incompleteResults: { wire: "incomplete_results" },
+    items: { wire: "items", type: "IssueSearchResultItem" },
+    searchType: { wire: "search_type" },
+    lexicalFallbackReason: { wire: "lexical_fallback_reason" },
+  },
+  "searchLabels response": {
+    totalCount: { wire: "total_count" },
+    incompleteResults: { wire: "incomplete_results" },
+    items: { wire: "items", type: "LabelSearchResultItem" },
+  },
+  "searchRepos response": {
+    totalCount: { wire: "total_count" },
+    incompleteResults: { wire: "incomplete_results" },
+    items: { wire: "items", type: "RepoSearchResultItem" },
+  },
+  "searchTopics response": {
+    totalCount: { wire: "total_count" },
+    incompleteResults: { wire: "incomplete_results" },
+    items: { wire: "items", type: "TopicSearchResultItem" },
+  },
+  "searchUsers response": {
+    totalCount: { wire: "total_count" },
+    incompleteResults: { wire: "incomplete_results" },
+    items: { wire: "items", type: "UserSearchResultItem" },
+  },
   "dependencyGraphDiffRange response": {
     changeType: { wire: "change_type" },
     manifest: { wire: "manifest" },
@@ -33,46 +60,17 @@ export const wireSchemasPart20: Record<string, WireSchema> = {
     result: { wire: "result" },
     message: { wire: "message" },
   },
-  "hostedComputeListNetworkConfigurationsForOrg response": {
+  "checksListForSuite response": {
     totalCount: { wire: "total_count" },
-    networkConfigurations: { wire: "network_configurations", type: "NetworkConfiguration" },
+    checkRuns: { wire: "check_runs", type: "CheckRun" },
   },
-  "searchCode response": {
+  "checksListForRef response": {
     totalCount: { wire: "total_count" },
-    incompleteResults: { wire: "incomplete_results" },
-    items: { wire: "items", type: "CodeSearchResultItem" },
+    checkRuns: { wire: "check_runs", type: "CheckRun" },
   },
-  "searchCommits response": {
+  "checksListSuitesForRef response": {
     totalCount: { wire: "total_count" },
-    incompleteResults: { wire: "incomplete_results" },
-    items: { wire: "items", type: "CommitSearchResultItem" },
-  },
-  "searchIssuesAndPullRequests response": {
-    totalCount: { wire: "total_count" },
-    incompleteResults: { wire: "incomplete_results" },
-    items: { wire: "items", type: "IssueSearchResultItem" },
-    searchType: { wire: "search_type" },
-    lexicalFallbackReason: { wire: "lexical_fallback_reason" },
-  },
-  "searchLabels response": {
-    totalCount: { wire: "total_count" },
-    incompleteResults: { wire: "incomplete_results" },
-    items: { wire: "items", type: "LabelSearchResultItem" },
-  },
-  "searchRepos response": {
-    totalCount: { wire: "total_count" },
-    incompleteResults: { wire: "incomplete_results" },
-    items: { wire: "items", type: "RepoSearchResultItem" },
-  },
-  "searchTopics response": {
-    totalCount: { wire: "total_count" },
-    incompleteResults: { wire: "incomplete_results" },
-    items: { wire: "items", type: "TopicSearchResultItem" },
-  },
-  "searchUsers response": {
-    totalCount: { wire: "total_count" },
-    incompleteResults: { wire: "incomplete_results" },
-    items: { wire: "items", type: "UserSearchResultItem" },
+    checkSuites: { wire: "check_suites", type: "CheckSuite" },
   },
   "usersListAttestationsBulk response": {
     attestationsSubjectDigests: { wire: "attestations_subject_digests" },

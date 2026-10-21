@@ -7,15 +7,15 @@ import type { RepositoryWebhooks } from "./repository";
 
 import type { IssueDependenciesSummary, IssueFieldValue, IssueType } from "./shared-issue";
 
-import type { NullableIssueComment } from "./shared-nullable.part001";
+import type { NullableIssueComment } from "./shared-nullable-shared";
+
+import type { SubIssuesSummary } from "./shared-public-user";
 
 import type { SimpleUser } from "./shared-simple";
 
-import type { SubIssuesSummary } from "./shared.part004";
-
 import type { SimpleInstallation } from "./simple";
 
-import type { WebhooksMilestone } from "./webhooks.part004";
+import type { WebhooksMilestone } from "./webhooks-marketplace-purchase";
 
 /**
  * Typed representation of the `WebhookIssuesDemilestoned` API schema.

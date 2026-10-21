@@ -3,9 +3,9 @@
 
 import type { Integration } from "./shared-integration";
 
-import type { PullRequestMinimal } from "./shared-pull.part001";
+import type { MinimalRepository } from "./shared-label";
 
-import type { MinimalRepository } from "./shared.part003";
+import type { PullRequestMinimal } from "./shared-pull-shared";
 
 /**
  * A suite of checks performed on the code of a given code change

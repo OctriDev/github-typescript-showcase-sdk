@@ -3,7 +3,7 @@
 
 import type { OrganizationSimpleWebhooks } from "./misc";
 
-import type { ProjectsV2Item } from "./projects.part001";
+import type { ProjectsV2Item } from "./projects-shared";
 
 import type { SimpleUser } from "./shared-simple";
 

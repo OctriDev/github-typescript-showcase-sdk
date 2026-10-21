@@ -21,9 +21,9 @@ import type {
 
 import type { CodeScanningRef } from "./shared-code";
 
-import type { NullableSimpleUser } from "./shared-nullable.part003";
+import type { NullableSimpleUser } from "./shared-nullable-simple-user";
 
-import type { PullRequestSimple } from "./shared-pull.part001";
+import type { PullRequestSimple } from "./shared-pull-shared";
 
 import type { SimpleUser } from "./shared-simple";
 

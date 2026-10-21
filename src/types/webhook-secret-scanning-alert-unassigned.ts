@@ -5,7 +5,7 @@ import type { EnterpriseWebhooks, OrganizationSimpleWebhooks } from "./misc";
 
 import type { RepositoryWebhooks } from "./repository";
 
-import type { SecretScanningAlertWebhook } from "./secret-scanning.part001";
+import type { SecretScanningAlertWebhook } from "./secret-scanning-shared";
 
 import type { SimpleUser } from "./shared-simple";
 

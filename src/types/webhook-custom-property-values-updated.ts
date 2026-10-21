@@ -7,7 +7,7 @@ import type { RepositoryWebhooks } from "./repository";
 
 import type { SimpleUser } from "./shared-simple";
 
-import type { CustomPropertyValue } from "./shared.part001";
+import type { CustomPropertyValue } from "./shared2";
 
 import type { SimpleInstallation } from "./simple";
 

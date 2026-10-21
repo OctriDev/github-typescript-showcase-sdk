@@ -9,7 +9,7 @@ import type { SimpleUser } from "./shared-simple";
 
 import type { SimpleInstallation } from "./simple";
 
-import type { WebhooksSecurityAdvisory } from "./webhooks.part007";
+import type { WebhooksSecurityAdvisory } from "./webhooks-security-advisory";
 
 /**
  * Typed representation of the `WebhookSecurityAdvisoryUpdated` API schema.

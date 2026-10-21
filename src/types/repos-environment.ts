@@ -3,7 +3,7 @@
 
 import type { DeploymentBranchPolicySettings } from "./repos-deployment";
 
-import type { WaitTimer } from "./repos.part002";
+import type { WaitTimer } from "./repos-shared";
 
 import type { DeploymentReviewerType } from "./shared-deployment";
 

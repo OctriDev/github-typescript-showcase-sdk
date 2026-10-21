@@ -3,7 +3,7 @@
 
 import type { EnterpriseWebhooks, OrganizationSimpleWebhooks } from "./misc";
 
-import type { RepositoryRule } from "./repos-repository-rule.part001";
+import type { RepositoryRule } from "./repos-repository-rule-shared";
 
 import type { RepositoryRuleset, RepositoryRulesetConditions } from "./repos-repository-ruleset";
 

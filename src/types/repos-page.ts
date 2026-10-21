@@ -3,7 +3,7 @@
 
 import type { PagesHttpsCertificate, PagesSourceHash } from "./repos-pages";
 
-import type { NullableSimpleUser } from "./shared-nullable.part003";
+import type { NullableSimpleUser } from "./shared-nullable-simple-user";
 
 /**
  * The configuration for GitHub Pages for a repository.

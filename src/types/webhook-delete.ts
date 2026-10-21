@@ -11,7 +11,7 @@ import type { SimpleInstallation } from "./simple";
 
 import type { WebhooksDeployPusherType } from "./webhooks-deploy";
 
-import type { WebhooksRef0 } from "./webhooks.part005";
+import type { WebhooksRef0 } from "./webhooks-previous-marketplace-purchase";
 
 /**
  * Typed representation of the `WebhookDelete` API schema.

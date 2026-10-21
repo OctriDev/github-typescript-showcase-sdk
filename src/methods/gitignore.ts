@@ -9,14 +9,14 @@ import { encodePathSegment, sdkDecode, sdkRequest } from "../client";
 /**
  * List all templates available to pass as an option when [creating a repository](https://docs.github.com/rest/repos/repos#create-a-repository-for-the-authenticated-user).
  */
-export async function gitignoreGetAllTemplates(
+export async function listTemplates(
   config: ClientConfig,
   requestOptions?: RequestOptions,
 ): Promise<string[]> {
   const _resp = await sdkRequest<string[]>({
     method: "GET",
     path: `/gitignore/templates`,
-    operationId: "gitignoreGetAllTemplates",
+    operationId: "listTemplates",
     responseDecoder: "json",
     ...requestOptions,
     config,
@@ -55,8 +55,8 @@ export class GitignoreNamespace {
   /**
    * List all templates available to pass as an option when [creating a repository](https://docs.github.com/rest/repos/repos#create-a-repository-for-the-authenticated-user).
    */
-  getAllTemplates(requestOptions?: RequestOptions): ReturnType<typeof gitignoreGetAllTemplates> {
-    return gitignoreGetAllTemplates(this._config, requestOptions);
+  listTemplates(requestOptions?: RequestOptions): ReturnType<typeof listTemplates> {
+    return listTemplates(this._config, requestOptions);
   }
   /**
    * Retrieves the content of a gitignore template by name. The `application/vnd.github.raw+json` media type returns the raw `.gitignore` contents; the response object includes the template name and source.

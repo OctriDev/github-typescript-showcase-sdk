@@ -3,9 +3,9 @@
 
 import type { NullableCollaborator } from "./repos-nullable";
 
-import type { NullableSimpleUser } from "./shared-nullable.part003";
+import type { MinimalRepository } from "./shared-label";
 
-import type { MinimalRepository } from "./shared.part003";
+import type { NullableSimpleUser } from "./shared-nullable-simple-user";
 
 /**
  * Repository Collaborator Permission

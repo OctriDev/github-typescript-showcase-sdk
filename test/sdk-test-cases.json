@@ -68439,8 +68439,8 @@
     "source": "media-examples"
   },
   {
-    "id": "authored-gitignoreGetAllTemplates-200-application/json",
-    "operationId": "gitignoreGetAllTemplates",
+    "id": "authored-listTemplates-200-application/json",
+    "operationId": "listTemplates",
     "method": "GET",
     "path": "/gitignore/templates",
     "kinds": ["json-response"],

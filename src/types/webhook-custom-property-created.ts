@@ -3,7 +3,7 @@
 
 import type { EnterpriseWebhooks, OrganizationSimpleWebhooks } from "./misc";
 
-import type { CustomProperty } from "./orgs.part001";
+import type { CustomProperty } from "./orgs-shared";
 
 import type { SimpleUser } from "./shared-simple";
 

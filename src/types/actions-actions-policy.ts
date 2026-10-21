@@ -10,14 +10,14 @@ import type {
 } from "./actions-enterprise";
 
 import type {
-  RepositoryRuleEnforcement,
-  RepositoryRulesetConditionsRepositoryIdTarget,
-} from "./shared-repository.part001";
-
-import type {
   RepositoryRulesetConditionsRepositoryNameTarget,
   RepositoryRulesetConditionsRepositoryPropertyTarget,
-} from "./shared-repository.part002";
+} from "./shared-repository-ruleset-conditions-repository-name-target";
+
+import type {
+  RepositoryRuleEnforcement,
+  RepositoryRulesetConditionsRepositoryIdTarget,
+} from "./shared-repository-shared";
 
 /**
  * An Actions policy defines rules for workflow execution protection.

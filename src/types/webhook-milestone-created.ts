@@ -9,7 +9,7 @@ import type { SimpleUser } from "./shared-simple";
 
 import type { SimpleInstallation } from "./simple";
 
-import type { WebhooksMilestone3 } from "./webhooks.part004";
+import type { WebhooksMilestone3 } from "./webhooks-marketplace-purchase";
 
 /**
  * Typed representation of the `WebhookMilestoneCreated` API schema.

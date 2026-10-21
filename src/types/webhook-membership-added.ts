@@ -7,9 +7,9 @@ import type { RepositoryWebhooks } from "./repository";
 
 import type { SimpleInstallation } from "./simple";
 
-import type { WebhooksUser } from "./webhooks-user";
+import type { WebhooksTeam } from "./webhooks-security-advisory";
 
-import type { WebhooksTeam } from "./webhooks.part007";
+import type { WebhooksUser } from "./webhooks-user";
 
 /**
  * Typed representation of the `WebhookMembershipAdded` API schema.

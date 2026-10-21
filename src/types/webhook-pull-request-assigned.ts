@@ -5,7 +5,7 @@ import type { EnterpriseWebhooks, OrganizationSimpleWebhooks } from "./misc";
 
 import type { RepositoryWebhooks } from "./repository";
 
-import type { PullRequestStack } from "./shared-pull.part002";
+import type { PullRequestStack } from "./shared-pull-request-stack";
 
 import type { SimpleUser } from "./shared-simple";
 
@@ -13,9 +13,9 @@ import type { SimpleInstallation } from "./simple";
 
 import type { WebhookPullRequestAssignedPullRequestRequestedReviewersItem } from "./webhook-pull-request-assigned-pull-request-requested-reviewers-item";
 
-import type { WebhooksUser } from "./webhooks-user";
+import type { WebhooksNumber } from "./webhooks-marketplace-purchase";
 
-import type { WebhooksNumber } from "./webhooks.part004";
+import type { WebhooksUser } from "./webhooks-user";
 
 /**
  * Typed representation of the `WebhookPullRequestAssigned` API schema.

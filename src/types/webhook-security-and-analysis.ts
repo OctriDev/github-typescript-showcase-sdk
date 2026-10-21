@@ -3,11 +3,11 @@
 
 import type { EnterpriseWebhooks, OrganizationSimpleWebhooks } from "./misc";
 
+import type { FullRepository } from "./shared-full-repository";
+
 import type { SecurityAndAnalysis } from "./shared-security";
 
 import type { SimpleUser } from "./shared-simple";
-
-import type { FullRepository } from "./shared.part002";
 
 import type { SimpleInstallation } from "./simple";
 

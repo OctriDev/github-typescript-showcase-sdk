@@ -5,7 +5,7 @@ import type { EnterpriseWebhooks, OrganizationSimpleWebhooks } from "./misc";
 
 import type { RepositoryWebhooks } from "./repository";
 
-import type { PullRequestStack } from "./shared-pull.part002";
+import type { PullRequestStack } from "./shared-pull-request-stack";
 
 import type { SimpleUser } from "./shared-simple";
 

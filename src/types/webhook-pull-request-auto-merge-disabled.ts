@@ -5,7 +5,7 @@ import type { EnterpriseWebhooks, OrganizationSimpleWebhooks } from "./misc";
 
 import type { RepositoryWebhooks } from "./repository";
 
-import type { PullRequestStack } from "./shared-pull.part002";
+import type { PullRequestStack } from "./shared-pull-request-stack";
 
 import type { SimpleUser } from "./shared-simple";
 
@@ -13,7 +13,7 @@ import type { SimpleInstallation } from "./simple";
 
 import type { WebhookPullRequestAutoMergeDisabledPullRequestRequestedReviewersItem } from "./webhook-pull-request-auto-merge-disabled-pull-request-requested-reviewers-item";
 
-import type { WebhooksNumber } from "./webhooks.part004";
+import type { WebhooksNumber } from "./webhooks-marketplace-purchase";
 
 /**
  * Typed representation of the `WebhookPullRequestAutoMergeDisabled` API schema.

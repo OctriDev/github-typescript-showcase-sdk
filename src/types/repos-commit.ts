@@ -3,7 +3,7 @@
 
 import type { Commit } from "./shared-commit";
 
-import type { DiffEntry } from "./shared.part001";
+import type { DiffEntry } from "./shared2";
 
 /**
  * Commit Activity

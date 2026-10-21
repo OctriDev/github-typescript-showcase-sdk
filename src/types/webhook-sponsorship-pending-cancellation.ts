@@ -9,9 +9,9 @@ import type { SimpleUser } from "./shared-simple";
 
 import type { SimpleInstallation } from "./simple";
 
-import type { WebhooksEffectiveDate } from "./webhooks.part002";
+import type { WebhooksEffectiveDate } from "./webhooks-comment";
 
-import type { WebhooksSponsorship } from "./webhooks.part007";
+import type { WebhooksSponsorship } from "./webhooks-security-advisory";
 
 /**
  * Typed representation of the `WebhookSponsorshipPendingCancellation` API schema.

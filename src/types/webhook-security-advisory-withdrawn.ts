@@ -7,7 +7,7 @@ import type { RepositoryWebhooks } from "./repository";
 
 import type { SimpleUser } from "./shared-simple";
 
-import type { CvssSeverities } from "./shared.part001";
+import type { CvssSeverities } from "./shared2";
 
 import type { SimpleInstallation } from "./simple";
 

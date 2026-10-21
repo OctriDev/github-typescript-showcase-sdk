@@ -9,7 +9,7 @@ import type { SimpleUser } from "./shared-simple";
 
 import type { SimpleInstallation } from "./simple";
 
-import type { WebhooksRule } from "./webhooks.part006";
+import type { WebhooksRule } from "./webhooks-release1";
 
 /**
  * Typed representation of the `WebhookBranchProtectionRuleCreated` API schema.

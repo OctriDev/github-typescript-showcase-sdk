@@ -5,7 +5,7 @@ import type { OrganizationSimpleWebhooks } from "./misc";
 
 import type { NullableDeployment } from "./nullable-deployment";
 
-import type { PullRequest } from "./pulls.part001";
+import type { PullRequest } from "./pulls-shared";
 
 import type { RepositoryWebhooks } from "./repository";
 

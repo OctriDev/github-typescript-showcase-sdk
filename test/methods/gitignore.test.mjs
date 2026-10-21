@@ -18,7 +18,7 @@ import {
 } from "../helpers/mock-sdk.mjs";
 import { configureClient } from "../../dist/client.js";
 import { SdkHttpError, SdkNetworkError, SdkResponseDecodeError } from "../../dist/errors.js";
-import { gitignoreGetAllTemplates, gitignoreGetTemplate } from "../../dist/methods/gitignore.js";
+import { listTemplates, gitignoreGetTemplate } from "../../dist/methods/gitignore.js";
 
 // Assigned once the mock server has a port. Declared at module scope because
 // the call map below is built here too, and a config-first SDK's call
@@ -30,11 +30,11 @@ let config;
 // the generated part: it encodes each method's real signature (argument order
 // for positional style, the params object otherwise).
 const CALL = {
-  gitignoreGetAllTemplates: {
-    route: "gitignoreGetAllTemplates",
+  listTemplates: {
+    route: "listTemplates",
     endpoint: "GET /gitignore/templates",
     mediaType: null,
-    invoke: () => gitignoreGetAllTemplates(config, {}),
+    invoke: () => listTemplates(config, {}),
   },
   gitignoreGetTemplate: {
     route: "gitignoreGetTemplate",

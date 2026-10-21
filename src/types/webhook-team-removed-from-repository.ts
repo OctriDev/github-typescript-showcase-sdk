@@ -7,7 +7,7 @@ import type { SimpleUser } from "./shared-simple";
 
 import type { SimpleInstallation } from "./simple";
 
-import type { WebhooksTeam1 } from "./webhooks.part008";
+import type { WebhooksTeam1 } from "./webhooks-team1";
 
 /**
  * Typed representation of the `WebhookTeamRemovedFromRepository` API schema.

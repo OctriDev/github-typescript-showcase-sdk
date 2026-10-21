@@ -5,6 +5,8 @@ import type { BlockedByAddedIssueEvent, BlockedByRemovedIssueEvent } from "./iss
 
 import type { BlockingAddedIssueEvent, BlockingRemovedIssueEvent } from "./issues-blocking";
 
+import type { AssignedIssueEvent, UnassignedIssueEvent } from "./issues-list-events";
+
 import type {
   NullableIssue,
   NullableIssueEventIntent,
@@ -13,41 +15,36 @@ import type {
 
 import type { ParentIssueAddedIssueEvent, ParentIssueRemovedIssueEvent } from "./issues-parent";
 
+import type { RenamedIssueEvent, UnlabeledIssueEvent } from "./issues-renamed-issue-event";
+
 import type {
   ReviewDismissedIssueEvent,
   ReviewRequestRemovedIssueEvent,
   ReviewRequestedIssueEvent,
 } from "./issues-review";
 
-import type { SubIssueAddedIssueEvent, SubIssueRemovedIssueEvent } from "./issues-sub";
-
 import type {
   AddedToProjectIssueEvent,
-  AssignedIssueEvent,
   ConvertedNoteToIssueIssueEvent,
   DemilestonedIssueEvent,
   LabeledIssueEvent,
   LockedIssueEvent,
   MilestonedIssueEvent,
   MovedColumnInProjectIssueEvent,
-} from "./issues.part001";
-
-import type {
   RemovedFromProjectIssueEvent,
-  RenamedIssueEvent,
-  UnassignedIssueEvent,
-  UnlabeledIssueEvent,
-} from "./issues.part002";
+} from "./issues-shared";
 
-import type { NullableIntegration } from "./shared-nullable.part001";
+import type { SubIssueAddedIssueEvent, SubIssueRemovedIssueEvent } from "./issues-sub";
 
-import type { NullableSimpleUser } from "./shared-nullable.part003";
+import type { NullableIntegration } from "./shared-nullable-shared";
+
+import type { NullableSimpleUser } from "./shared-nullable-simple-user";
 
 import type { SimpleUser } from "./shared-simple";
 
 import type { Team } from "./shared-team";
 
-import type { AuthorAssociation } from "./shared.part001";
+import type { AuthorAssociation } from "./shared2";
 
 /**
  * Issue Event

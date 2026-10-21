@@ -9,7 +9,7 @@ import type { SimpleUser } from "./shared-simple";
 
 import type { SimpleInstallation } from "./simple";
 
-import type { WebhooksSponsorship } from "./webhooks.part007";
+import type { WebhooksSponsorship } from "./webhooks-security-advisory";
 
 /**
  * Typed representation of the `WebhookSponsorshipEdited` API schema.
