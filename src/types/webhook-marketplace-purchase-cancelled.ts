@@ -9,9 +9,9 @@ import type { SimpleUser } from "./shared-simple";
 
 import type { SimpleInstallation } from "./simple";
 
-import type { WebhooksMarketplacePurchase } from "./webhooks.part004";
+import type { WebhooksMarketplacePurchase } from "./webhooks-marketplace-purchase";
 
-import type { WebhooksPreviousMarketplacePurchase } from "./webhooks.part005";
+import type { WebhooksPreviousMarketplacePurchase } from "./webhooks-previous-marketplace-purchase";
 
 /**
  * Typed representation of the `WebhookMarketplacePurchaseCancelled` API schema.

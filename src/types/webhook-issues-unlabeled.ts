@@ -9,7 +9,7 @@ import type { SimpleUser } from "./shared-simple";
 
 import type { SimpleInstallation } from "./simple";
 
-import type { WebhooksIssue } from "./webhooks-issue.part001";
+import type { WebhooksIssue } from "./webhooks-issue-shared";
 
 import type { WebhooksLabel } from "./webhooks-label";
 

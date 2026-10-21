@@ -96198,72 +96198,6 @@
       ]
     },
     {
-      "id": "gitignoreGetAllTemplates",
-      "wireOperationId": "gitignoreGetAllTemplates",
-      "method": "get",
-      "path": "/gitignore/templates",
-      "namespace": ["gitignore"],
-      "streams": false,
-      "mode": "normal",
-      "streamSelector": null,
-      "requestMediaType": null,
-      "contentTypes": null,
-      "publicMethods": [
-        {
-          "mode": "normal",
-          "name": "gitignoreGetAllTemplates"
-        }
-      ],
-      "requestModes": [],
-      "responseModes": [
-        {
-          "statusCode": "200",
-          "mediaType": "application/json",
-          "decoderKind": "json",
-          "schemaRef": null,
-          "schemaType": {
-            "type": "array",
-            "format": null,
-            "ref": null,
-            "nullable": false,
-            "items": {
-              "type": "string",
-              "format": null,
-              "ref": null,
-              "nullable": false,
-              "items": null,
-              "mapValue": null,
-              "variants": null
-            },
-            "mapValue": null,
-            "variants": null
-          },
-          "hasAuthoredExample": true,
-          "authoredExampleSource": "media-examples"
-        }
-      ],
-      "errorResponseModes": [
-        {
-          "statusCode": "304",
-          "mediaType": null,
-          "decoderKind": "empty",
-          "schemaRef": null,
-          "schemaType": {
-            "type": "any",
-            "format": null,
-            "ref": null,
-            "nullable": false,
-            "items": null,
-            "mapValue": null
-          },
-          "hasAuthoredExample": false,
-          "authoredExampleSource": "none"
-        }
-      ],
-      "params": [],
-      "bindings": []
-    },
-    {
       "id": "gitignoreGetTemplate",
       "wireOperationId": "gitignoreGetTemplate",
       "method": "get",
@@ -113821,6 +113755,72 @@
           "explode": true
         }
       ]
+    },
+    {
+      "id": "listTemplates",
+      "wireOperationId": "listTemplates",
+      "method": "get",
+      "path": "/gitignore/templates",
+      "namespace": ["gitignore"],
+      "streams": false,
+      "mode": "normal",
+      "streamSelector": null,
+      "requestMediaType": null,
+      "contentTypes": null,
+      "publicMethods": [
+        {
+          "mode": "normal",
+          "name": "listTemplates"
+        }
+      ],
+      "requestModes": [],
+      "responseModes": [
+        {
+          "statusCode": "200",
+          "mediaType": "application/json",
+          "decoderKind": "json",
+          "schemaRef": null,
+          "schemaType": {
+            "type": "array",
+            "format": null,
+            "ref": null,
+            "nullable": false,
+            "items": {
+              "type": "string",
+              "format": null,
+              "ref": null,
+              "nullable": false,
+              "items": null,
+              "mapValue": null,
+              "variants": null
+            },
+            "mapValue": null,
+            "variants": null
+          },
+          "hasAuthoredExample": true,
+          "authoredExampleSource": "media-examples"
+        }
+      ],
+      "errorResponseModes": [
+        {
+          "statusCode": "304",
+          "mediaType": null,
+          "decoderKind": "empty",
+          "schemaRef": null,
+          "schemaType": {
+            "type": "any",
+            "format": null,
+            "ref": null,
+            "nullable": false,
+            "items": null,
+            "mapValue": null
+          },
+          "hasAuthoredExample": false,
+          "authoredExampleSource": "none"
+        }
+      ],
+      "params": [],
+      "bindings": []
     },
     {
       "id": "markdownRender",
@@ -346196,16 +346196,6 @@
         ]
       },
       {
-        "id": "gitignoreGetAllTemplates",
-        "method": "get",
-        "path": "/gitignore/templates",
-        "summary": "List all templates available to pass as an option when [creating a repository](https://docs.github.com/rest/repos/repos#create-a-repository-for-the-authenticated-user).",
-        "description": "List all templates available to pass as an option when [creating a repository](https://docs.github.com/rest/repos/repos#create-a-repository-for-the-authenticated-user).",
-        "deprecated": false,
-        "deprecationMessage": null,
-        "parameters": []
-      },
-      {
         "id": "gitignoreGetTemplate",
         "method": "get",
         "path": "/gitignore/templates/{name}",
@@ -349004,6 +348994,16 @@
             "description": "The Git reference for the results you want to list. The `ref` for a branch can be formatted either as `refs/heads/<branch name>` or simply `<branch name>`. To reference a pull request use `refs/pull/<number>/merge`."
           }
         ]
+      },
+      {
+        "id": "listTemplates",
+        "method": "get",
+        "path": "/gitignore/templates",
+        "summary": "List all templates available to pass as an option when [creating a repository](https://docs.github.com/rest/repos/repos#create-a-repository-for-the-authenticated-user).",
+        "description": "List all templates available to pass as an option when [creating a repository](https://docs.github.com/rest/repos/repos#create-a-repository-for-the-authenticated-user).",
+        "deprecated": false,
+        "deprecationMessage": null,
+        "parameters": []
       },
       {
         "id": "markdownRender",

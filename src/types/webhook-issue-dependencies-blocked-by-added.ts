@@ -7,7 +7,7 @@ import type { RepositoryWebhooks } from "./repository";
 
 import type { Issue } from "./shared-issue";
 
-import type { Repository } from "./shared-repository.part001";
+import type { Repository } from "./shared-repository-shared";
 
 import type { SimpleUser } from "./shared-simple";
 

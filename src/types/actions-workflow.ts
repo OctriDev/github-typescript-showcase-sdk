@@ -5,11 +5,11 @@ import type { ReferencedWorkflow } from "./actions";
 
 import type { NullableSimpleCommit } from "./actions-nullable";
 
-import type { PullRequestMinimal } from "./shared-pull.part001";
+import type { MinimalRepository } from "./shared-label";
+
+import type { PullRequestMinimal } from "./shared-pull-shared";
 
 import type { SimpleUser } from "./shared-simple";
-
-import type { MinimalRepository } from "./shared.part003";
 
 /**
  * A GitHub Actions workflow

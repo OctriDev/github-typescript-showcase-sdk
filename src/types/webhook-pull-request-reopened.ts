@@ -9,7 +9,7 @@ import type { SimpleUser } from "./shared-simple";
 
 import type { SimpleInstallation } from "./simple";
 
-import type { WebhooksNumber } from "./webhooks.part004";
+import type { WebhooksNumber } from "./webhooks-marketplace-purchase";
 
 /**
  * Typed representation of the `WebhookPullRequestReopened` API schema.

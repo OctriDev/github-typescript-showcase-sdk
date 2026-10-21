@@ -3,7 +3,7 @@
 
 import type { NullableIssueReference } from "./issues-nullable";
 
-import type { NullableIntegration } from "./shared-nullable.part001";
+import type { NullableIntegration } from "./shared-nullable-shared";
 
 import type { SimpleUser } from "./shared-simple";
 

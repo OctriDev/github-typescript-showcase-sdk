@@ -7,17 +7,17 @@ import type {
   NullableIssueCommentMinimized,
   NullableMilestone,
   NullablePinnedIssueComment,
-} from "./shared-nullable.part001";
+} from "./shared-nullable-shared";
 
-import type { NullableSimpleUser } from "./shared-nullable.part003";
+import type { NullableSimpleUser } from "./shared-nullable-simple-user";
 
-import type { Repository } from "./shared-repository.part001";
+import type { ReactionRollup, SubIssuesSummary } from "./shared-public-user";
+
+import type { Repository } from "./shared-repository-shared";
 
 import type { SimpleUser } from "./shared-simple";
 
-import type { AuthorAssociation } from "./shared.part001";
-
-import type { ReactionRollup, SubIssuesSummary } from "./shared.part004";
+import type { AuthorAssociation } from "./shared2";
 
 /**
  * Issues are a great way to keep track of tasks, enhancements, and bugs for your projects.

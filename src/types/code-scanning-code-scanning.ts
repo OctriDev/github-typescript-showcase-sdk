@@ -23,7 +23,7 @@ import type {
   AlertUrl,
 } from "./shared-alert";
 
-import type { NullableSimpleUser } from "./shared-nullable.part003";
+import type { NullableSimpleUser } from "./shared-nullable-simple-user";
 
 import type { SimpleRepository, SimpleUser } from "./shared-simple";
 

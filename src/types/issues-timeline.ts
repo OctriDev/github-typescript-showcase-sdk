@@ -11,17 +11,19 @@ import type {
   IssueTypeRemovedIssueEvent,
 } from "./issues-issue";
 
+import type { StateChangeIssueEvent } from "./issues-list-events-for-timeline";
+
 import type { NullableIssueEventIntent } from "./issues-nullable";
 
 import type { ParentIssueAddedIssueEvent, ParentIssueRemovedIssueEvent } from "./issues-parent";
+
+import type { RenamedIssueEvent, UnlabeledIssueEvent } from "./issues-renamed-issue-event";
 
 import type {
   ReviewDismissedIssueEvent,
   ReviewRequestRemovedIssueEvent,
   ReviewRequestedIssueEvent,
 } from "./issues-review";
-
-import type { SubIssueAddedIssueEvent, SubIssueRemovedIssueEvent } from "./issues-sub";
 
 import type {
   AddedToProjectIssueEvent,
@@ -31,14 +33,10 @@ import type {
   LockedIssueEvent,
   MilestonedIssueEvent,
   MovedColumnInProjectIssueEvent,
-} from "./issues.part001";
-
-import type {
   RemovedFromProjectIssueEvent,
-  RenamedIssueEvent,
-  StateChangeIssueEvent,
-  UnlabeledIssueEvent,
-} from "./issues.part002";
+} from "./issues-shared";
+
+import type { SubIssueAddedIssueEvent, SubIssueRemovedIssueEvent } from "./issues-sub";
 
 import type { CommitComment } from "./shared-commit";
 
@@ -48,15 +46,15 @@ import type {
   NullableIntegration,
   NullableIssueCommentMinimized,
   NullablePinnedIssueComment,
-} from "./shared-nullable.part001";
+} from "./shared-nullable-shared";
 
-import type { PullRequestReviewComment } from "./shared-pull.part001";
+import type { ReactionRollup } from "./shared-public-user";
+
+import type { PullRequestReviewComment } from "./shared-pull-shared";
 
 import type { SimpleUser } from "./shared-simple";
 
-import type { AuthorAssociation } from "./shared.part001";
-
-import type { ReactionRollup } from "./shared.part004";
+import type { AuthorAssociation } from "./shared2";
 
 /**
  * Timeline Assigned Issue Event

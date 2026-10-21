@@ -9,11 +9,11 @@ import type { SimpleUser } from "./shared-simple";
 
 import type { SimpleInstallation } from "./simple";
 
-import type { WebhooksChanges8 } from "./webhooks.part001";
+import type { WebhooksEffectiveDate } from "./webhooks-comment";
 
-import type { WebhooksEffectiveDate } from "./webhooks.part002";
+import type { WebhooksSponsorship } from "./webhooks-security-advisory";
 
-import type { WebhooksSponsorship } from "./webhooks.part007";
+import type { WebhooksChanges8 } from "./webhooks-shared";
 
 /**
  * Typed representation of the `WebhookSponsorshipPendingTierChange` API schema.

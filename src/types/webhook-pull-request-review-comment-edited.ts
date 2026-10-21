@@ -5,7 +5,7 @@ import type { EnterpriseWebhooks, OrganizationSimpleWebhooks } from "./misc";
 
 import type { RepositoryWebhooks } from "./repository";
 
-import type { PullRequestStack } from "./shared-pull.part002";
+import type { PullRequestStack } from "./shared-pull-request-stack";
 
 import type { SimpleUser } from "./shared-simple";
 
@@ -15,7 +15,7 @@ import type { WebhookPullRequestReviewCommentEditedPullRequestRequestedReviewers
 
 import type { WebhooksReviewComment } from "./webhooks-review";
 
-import type { WebhooksChanges } from "./webhooks.part001";
+import type { WebhooksChanges } from "./webhooks-shared";
 
 /**
  * Typed representation of the `WebhookPullRequestReviewCommentEdited` API schema.

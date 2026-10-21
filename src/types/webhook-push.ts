@@ -7,7 +7,7 @@ import type { SimpleUser } from "./shared-simple";
 
 import type { SimpleInstallation } from "./simple";
 
-import type { WebhooksNullableString } from "./webhooks.part004";
+import type { WebhooksNullableString } from "./webhooks-marketplace-purchase";
 
 /**
  * Typed representation of the `WebhookPush` API schema.

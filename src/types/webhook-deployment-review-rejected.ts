@@ -9,11 +9,11 @@ import type { SimpleUser } from "./shared-simple";
 
 import type { SimpleInstallation } from "./simple";
 
+import type { WebhooksReviewers } from "./webhooks-release1";
+
+import type { WebhooksApprover } from "./webhooks-shared";
+
 import type { WebhooksWorkflowJobRun } from "./webhooks-workflow";
-
-import type { WebhooksApprover } from "./webhooks.part001";
-
-import type { WebhooksReviewers } from "./webhooks.part006";
 
 /**
  * Typed representation of the `WebhookDeploymentReviewRejected` API schema.

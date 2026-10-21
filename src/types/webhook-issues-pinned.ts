@@ -9,7 +9,7 @@ import type { SimpleUser } from "./shared-simple";
 
 import type { SimpleInstallation } from "./simple";
 
-import type { WebhooksIssue2 } from "./webhooks.part003";
+import type { WebhooksIssue2 } from "./webhooks-issue2";
 
 /**
  * Typed representation of the `WebhookIssuesPinned` API schema.

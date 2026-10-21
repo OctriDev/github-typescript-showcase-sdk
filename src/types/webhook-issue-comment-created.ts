@@ -11,11 +11,11 @@ import type {
   NullableIntegration,
   NullableIssueCommentMinimized,
   NullablePinnedIssueComment,
-} from "./shared-nullable.part001";
+} from "./shared-nullable-shared";
+
+import type { SubIssuesSummary } from "./shared-public-user";
 
 import type { SimpleUser } from "./shared-simple";
-
-import type { SubIssuesSummary } from "./shared.part004";
 
 import type { SimpleInstallation } from "./simple";
 

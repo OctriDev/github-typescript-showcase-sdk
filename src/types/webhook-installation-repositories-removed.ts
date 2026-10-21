@@ -9,11 +9,11 @@ import type { Installation } from "./shared-installation";
 
 import type { SimpleUser } from "./shared-simple";
 
+import type { WebhooksRepositorySelection } from "./webhooks-release1";
+
 import type { WebhooksRepositoriesAdded } from "./webhooks-repositories";
 
 import type { WebhooksUser } from "./webhooks-user";
-
-import type { WebhooksRepositorySelection } from "./webhooks.part006";
 
 /**
  * Typed representation of the `WebhookInstallationRepositoriesRemoved` API schema.

@@ -7,13 +7,13 @@ import type { RepositoryWebhooks } from "./repository";
 
 import type { IssueDependenciesSummary, IssueType } from "./shared-issue";
 
-import type { SimpleUser } from "./shared-simple";
+import type { SubIssuesSummary } from "./shared-public-user";
 
-import type { SubIssuesSummary } from "./shared.part004";
+import type { SimpleUser } from "./shared-simple";
 
 import type { SimpleInstallation } from "./simple";
 
-import type { WebhooksIssueComment } from "./webhooks-issue.part002";
+import type { WebhooksIssueComment } from "./webhooks-issue-comment";
 
 /**
  * Typed representation of the `WebhookIssueCommentUnpinned` API schema.

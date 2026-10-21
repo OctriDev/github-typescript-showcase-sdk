@@ -3,11 +3,11 @@
 
 import type { DeploymentSimple, SimpleCommit } from "./checks";
 
-import type { PullRequest } from "./pulls.part001";
+import type { PullRequest } from "./pulls-shared";
 
 import type { Integration } from "./shared-integration";
 
-import type { PullRequestMinimal } from "./shared-pull.part001";
+import type { PullRequestMinimal } from "./shared-pull-shared";
 
 import type { SimpleRepository, SimpleUser } from "./shared-simple";
 

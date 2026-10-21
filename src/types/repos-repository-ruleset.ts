@@ -3,9 +3,9 @@
 
 import type { OrgRulesetConditions } from "./repos-org";
 
-import type { RepositoryRule } from "./repos-repository-rule.part001";
+import type { RepositoryRule } from "./repos-repository-rule-shared";
 
-import type { RepositoryRuleEnforcement } from "./shared-repository.part001";
+import type { RepositoryRuleEnforcement } from "./shared-repository-shared";
 
 /**
  * A set of rules to apply when specified conditions are met.
